@@ -1,0 +1,52 @@
+// Цвета
+$light: #ece0d1;
+$pale: #dbc1ac;
+$middle: #967259;
+$brown: #634832;
+$dark: #38220f;
+
+// Текст
+$title-size: 35px;
+$text-size: 28px;
+$text-size-btn: 20px;
+
+* {
+    text-decoration: none;
+    color: $dark;
+}
+body {
+    margin: 0 5% 0 5%;
+    padding: 0;
+    font-size: $text-size;
+    background-color: $pale;
+}
+input, textarea {
+    font-size: $text-size;
+}
+// BUTTONS
+button {
+    cursor: pointer;
+    background-color: transparent;
+    font-size: $text-size-btn;
+    padding: 10px;
+    margin-right: 15px;
+    border: none;    
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $dark;
+    transition: box-shadow .18s ease-out,background .18s ease-out,color .18s ease-out;
+}
+button:focus-visible {
+    box-shadow: 0 0 0 3px $dark;
+}
+button:hover {
+    box-shadow: 0 1px 1px 0  $dark, 0 2px 5px 0  $dark;
+}
+button:active {
+    background-color: $dark !important;
+}
+// ЗАГОЛОВКИ
+h4 {
+    margin: 10px 0 10px 0;
+}
